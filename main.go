@@ -67,7 +67,7 @@ func insert(w http.ResponseWriter, r *http.Request) {
 
     fmt.Fprintf(w, "isnert endpoint got hit!")
 
-  //  db.Exec("insert into users values(default, 'xxx','xxx@xxx','xxxpassword','user')") // for fixed //exection
+  
 
     name := "Harshal Rahangde"
 
@@ -77,7 +77,7 @@ func insert(w http.ResponseWriter, r *http.Request) {
 
     
 
-    //you can also use variables for a custom execution
+   
 
     db.Exec("insert into emp values(?,?,?)", id, name,salary)
     fmt.Println("data inserted.")
